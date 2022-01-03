@@ -1,0 +1,10 @@
+package xytttt-9;
+import java.util.GregorianCalendar;
+public class GregorianCalendar {
+	public static void main(String[] args) {
+		GregorianCalendar myGregorianCalendar=new GregorianCalendar();
+		System.out.printf("Current time: %d-%d-%d\n",myGregorianCalendar.get(GregorianCalendar.YEAR),myGregorianCalendar.get(GregorianCalendar.MONTH),myGregorianCalendar.get(GregorianCalendar.DAY_OF_MONTH));
+		myGregorianCalendar.setTimeInMillis(1234567898765L);
+		System.out.printf("Set time: %d-%d-%d\n",myGregorianCalendar.get(GregorianCalendar.YEAR),myGregorianCalendar.get(GregorianCalendar.MONTH),myGregorianCalendar.get(GregorianCalendar.DAY_OF_MONTH));
+	}
+}
